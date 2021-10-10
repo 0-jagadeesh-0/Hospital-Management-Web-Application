@@ -23,12 +23,32 @@ body{
     justify-content: center;
     align-items: center;
 }
-.nav-items ul{
-    list-style: none;
-}
 .nav-items a{
     text-decoration: none;
+    padding: 0 20px;
+    font-size: 1rem;
     color: white;
+}
+
+.company{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.login-btn{
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: aqua;
+    cursor: pointer;
 }
 
 
