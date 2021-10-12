@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+           body {
+            background-image: url("back1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        #one {
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+            font-size: 50px;
+            background-color: rgb(0, 173, 180);
+            margin: 0;
+        }
+        form{
+            background-color:rgba(46, 170, 219, 0.76) ;
+            width: 300px;
+            height: 200px;
+            border-radius: 30px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: 2px solid black ;
+        }
+        #two{
+            text-align: center;
+            padding-top: 10px;
+        }
+        #patient{
+            margin-left: 60px;
+            width: 180px;
+            height: 25px;
+            border-radius: 9px;
+        }
+        #search{
+            margin-top: 25px;
+           margin-left: 160px;
+           border-radius: 5px;
+        }
+      </style>
+    </head>
+    <body>
+        <h1 id="one">Admit Hospital </h1>
+        <form>
+            <h1 id="two">Patient Details</h1>
+            <input for="patient" id="patient" type="text" placeholder="Enter the name">
+            <br>
+            <input  id="search" onclick="tenet()" type="submit" value="Search">
+        </form>
+    </body>
+</html>

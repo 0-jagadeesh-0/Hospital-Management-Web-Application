@@ -22,7 +22,7 @@ app.use(express.static(static_path));
 
 
 app.get("/",(req,res)=> {
-    res.render("home");
+    res.render("patient_registration");
 })
 
 app.get("/doctorinfo",(req,res)=>{

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+               border: 2px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <button onclick="tenet()" type="button">try it</button>
+        <p id="demo"></p>
+        <table id="tab">
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>mani</td>
+                <td>19</td>
+            </tr>
+        </table>
+        <p id="tab">vamsi</p>
+        <script>
+            function tenet()
+            {
+                let text=document.getElementById("tab").innerHTML;
+                document.getElementById("demo").innerHTML=text;
+            }
+        </script>
+    </body>
+    </html>
