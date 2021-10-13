@@ -1,0 +1,11 @@
+#register-page{
+    height: 100vh;
+    background-color: aliceblue;
+}
+.register-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 400px;
+}
