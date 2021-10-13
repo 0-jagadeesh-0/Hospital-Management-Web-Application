@@ -2,12 +2,20 @@ const express=require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const ejs = require("ejs");
+const connectDB = require("./config/db");
+const dotenv = require("dotenv");
+const userRoutes = require("./routes/userRoutes")
 
+dotenv.config();
 
 
 // Server 
 
 const app = express();
+
+// Database Connection 
+
+connectDB();
 
 // Middlewares 
 
@@ -15,11 +23,12 @@ const static_path=path.join(__dirname,"../client");
 
 app.set("view engine","ejs");
 
-
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(static_path));
 
+app.use("/api/users",userRoutes);
 
 app.get("/",(req,res)=> {
     res.render("home");
@@ -39,6 +48,38 @@ app.get("/support",(req,res)=>{
 app.get("/contact",(req,res)=>{
     res.render("contact");
 })
+app.get("/login",(req,res)=>{
+    res.render("login");
+})
+app.get("/admin-login",(req,res)=>{
+    res.render("adminlogin");
+})
+app.get("/adminhome",(req,res)=>{
+    res.render("adminhome");
+})
+app.get("/doctor-login",(req,res)=>{
+    res.render("doctorloginhome");
+})
+app.get("/adminregister",(req,res)=>{
+    res.render("adminregister");
+})
+app.get("/doctorregister",(req,res)=>{
+    res.render("doctorregister");
+})
+app.get("/register-patient",(req,res)=>{
+    res.render("patientregister");
+})
+app.get("/book-appointment",(req,res)=>{
+    res.render("bookappointment");
+})
+app.get("/enquiry",(req,res)=>{
+    res.render("enquiry");
+})
+app.get("/list",(req,res)=>{
+    res.render("list");
+})
+
+
 
 
 app.listen(3000,function() {
