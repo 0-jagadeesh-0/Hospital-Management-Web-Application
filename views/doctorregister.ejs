@@ -1,9 +1,10 @@
 <%- include("header") -%>
 
 <section id="register-page">
-    <form action="/doctor-login" class="register-form">
-        <input type="text" placeholder="Userid">
-        <input type="password" placeholder="Password">
+    <%- include("nav") -%>
+    <form action="/doctor" method="post" class="register-form">
+        <input name="userid" type="text" placeholder="Userid">
+        <input name="password" type="password" placeholder="Password">
         <input  type="submit" value="Register">
     </form>
     

@@ -1,5 +1,16 @@
 <%- include("header") -%>
-
-
+<section id="adminlogin">
+    <%- include("nav") -%>
+    <div class="admin-container">
+        <form action="/doctorhome" method="post" class="form">
+            <h3>Doctor Login</h3>
+            <input name="userid" type="text" placeholder="Userid">
+            <input name="password" type="password" placeholder="Password">
+            <input class="admin-btn" type="submit" value="Login">
+            <a href="/doctorregister">Register</a>
+        </form>
+    </div>
+    
+</section>
 
 <%- include("footer") -%>

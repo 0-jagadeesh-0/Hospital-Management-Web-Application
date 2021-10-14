@@ -1,11 +1,19 @@
 <%- include("header") -%>
 
 <section id="adminlogin">
-    <form action="/adminhome">
-        <input type="text" placeholder="Userid">
-        <input type="password" placeholder="Password">
-        <input type="submit" value="Login">
-    </form>
+    <%- include("nav") -%>
+    <div class="admin-container">
+        <form action="/adminhome" method="post" class="form">
+            <h3>Admin Login</h3>
+            <input name="userid" type="text" placeholder="Userid">
+            <input name="password" type="password" placeholder="Password">
+            <input class="admin-btn" type="submit" value="Login">
+            <a href="/adminregister">Register</a>
+        </form>
+    </div>
+    
 </section>
+
+
 
 <%- include("footer") -%>

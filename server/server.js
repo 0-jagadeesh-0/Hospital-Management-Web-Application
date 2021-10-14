@@ -6,6 +6,7 @@ const connectDB = require("./config/db");
 const dotenv = require("dotenv");
 const userRoutes = require("./routes/userRoutes")
 
+
 dotenv.config();
 
 
@@ -24,11 +25,17 @@ const static_path=path.join(__dirname,"../client");
 app.set("view engine","ejs");
 
 app.use(express.json());
+
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
+
+app.use(bodyParser.json());
 
 app.use(express.static(static_path));
 
-app.use("/api/users",userRoutes);
+app.use("/",userRoutes);
+
+
 
 app.get("/",(req,res)=> {
     res.render("home");
@@ -54,11 +61,10 @@ app.get("/login",(req,res)=>{
 app.get("/admin-login",(req,res)=>{
     res.render("adminlogin");
 })
-app.get("/adminhome",(req,res)=>{
-    res.render("adminhome");
-})
+
+
 app.get("/doctor-login",(req,res)=>{
-    res.render("doctorloginhome");
+    res.render("doctorlogin");
 })
 app.get("/adminregister",(req,res)=>{
     res.render("adminregister");
@@ -66,9 +72,7 @@ app.get("/adminregister",(req,res)=>{
 app.get("/doctorregister",(req,res)=>{
     res.render("doctorregister");
 })
-app.get("/register-patient",(req,res)=>{
-    res.render("patientregister");
-})
+
 app.get("/book-appointment",(req,res)=>{
     res.render("bookappointment");
 })

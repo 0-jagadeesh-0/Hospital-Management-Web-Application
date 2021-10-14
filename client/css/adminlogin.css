@@ -1,0 +1,44 @@
+#adminlogin{
+    height: 100vh;
+}
+
+.admin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    position: absolute;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.form input{
+    margin: 5% 2%;
+    width: fit-content;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    align-items: center;
+    padding: 1%;
+}
+
+.admin-btn{
+    padding: 50px;
+    background-color: rgb(219, 243, 243);
+    cursor: pointer;
+
+}
+
+.form a{
+    color: white;
+    text-decoration: none;
+}

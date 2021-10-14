@@ -1,0 +1,17 @@
+<%- include("header") -%>
+<%- include("nav") -%>
+
+<form action="/patient" method="post">
+    <h2 id="two">Patient Registration Form</h2>
+        <input name="fname" placeholder="Firstname" type="text">
+        <input name="lname" placeholder="Lastname" type="text">
+        <input name="mobile" placeholder="Contact" type="text">
+        <input name="age" placeholder="Age" type="text">
+        <input name="gender" placeholder="Gender" type="text" > 
+        <input name="bloodgroup" placeholder="Blood group" typr="text">
+        <input name="address" placeholder="Address" type="text">
+        <input name="problem" placeholder="Problem" type="text">
+        <input type="submit" value="register">
+</form>
+
+<%- include("footer") -%>

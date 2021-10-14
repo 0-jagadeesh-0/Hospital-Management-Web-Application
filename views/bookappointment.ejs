@@ -1,5 +1,37 @@
 <%- include("header") -%>
 
+<form>
+    <h2 id="two">Appointment Form</h2>
+    <div class="first">
+        <input id="fname" placeholder="Firstname" type="text" for="fname">
+        <input id="lname" placeholder="Lastname" type="text" for="lname">
 
+    </div>
+    <div class="first">
+        <input for="num" placeholder="Contact" type="number" id="num">
+        <input for="mail" placeholder="Email" typr="text" id="mail">
+    </div>
+    <div class="first">
+        <input id="age" placeholder="Age" type="number" for="age">
+        <input for="gen" placeholder="Gender" type="text" id="gen">
+    </div>
+    <div class="first">
+        <input for="date_time" placeholder="datetime" type="date" id="date_time">
+        <select>
+            <option value="heart">heart</option>
+            <option value="brain">brain</option>
+            <option value="lungs">lungs</option>
+            <option value="kidneys">kidneys</option>
+            <option value="ENT">ENT</option>
+            <option value="stomach">stomach</option>
+            <option value="abdomin">abdomin</option>
+            <option value="fever">fever</option>
+            <option value="nerves problem">nerves problem</option>
+            <option value="skin disease">skin disease</option>
+
+        </select>
+    </div>
+    <input id="submit" type="submit" value="book apointment">
+</form>
 
 <%- include("footer") -%>

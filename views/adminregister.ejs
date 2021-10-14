@@ -1,10 +1,11 @@
 <%- include("header") -%>
 
 <section id="register-page">
-    <form action="/admin-login" class="register-form">
-        <input type="text" placeholder="Userid">
-        <input type="password" required placeholder="Password">
-        <input  type="submit" required value="Register">
+    <%- include("nav") -%>
+    <form action="/admin" method="post" id="register-form">
+        <input name="userid" type="text" placeholder="Userid">
+        <input name="password" type="password" placeholder="Password">
+        <input  type="submit" value="Register">
     </form>
     
 </section>
