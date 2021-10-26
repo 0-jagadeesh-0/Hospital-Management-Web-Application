@@ -13,7 +13,7 @@ const registerPatient = async (req,res) =>{
         problem:req.body.problem
         })
         await newpatient.save();
-        res.json({status:"OK"});
+        res.render("adminhome");
     }
     catch(error)
     {
@@ -22,4 +22,29 @@ const registerPatient = async (req,res) =>{
     
 }
 
-module.exports={registerPatient};
+const findPatient = async (req,res)=>{
+
+
+        await Patient.find({
+            fname:req.body.fname
+            // address:req.body.address
+        })
+        .then((data)=>{
+            if(!data)
+            {
+                res.status(404).send({message:"user not found"})
+            }
+            else
+            {
+                
+               
+                res.render("enquirydisplay",{records:data});
+                res.send(data);
+            }
+        })
+        .catch((err)=>{
+            res.status(500).send({message:"user not found"})
+        })
+}
+
+module.exports={registerPatient,findPatient};

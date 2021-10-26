@@ -4,7 +4,9 @@ const path = require("path");
 const ejs = require("ejs");
 const connectDB = require("./config/db");
 const dotenv = require("dotenv");
-const userRoutes = require("./routes/userRoutes")
+const userRoutes = require("./routes/userRoutes");
+const Patient = require("./models/patientmodel");
+const { findPatient } = require("./controllers/patientcontroller");
 
 
 dotenv.config();
@@ -76,9 +78,7 @@ app.get("/doctorregister",(req,res)=>{
 app.get("/book-appointment",(req,res)=>{
     res.render("bookappointment");
 })
-app.get("/enquiry",(req,res)=>{
-    res.render("enquiry");
-})
+// app.get("/enquiry",findPatient);
 app.get("/list",(req,res)=>{
     res.render("list");
 })

@@ -1,23 +1,22 @@
 <%- include("header") -%>
 
-<form>
+<form action="/appointment" method="post">
     <h2 id="two">Appointment Form</h2>
     <div class="first">
-        <input id="fname" placeholder="Firstname" type="text" for="fname">
-        <input id="lname" placeholder="Lastname" type="text" for="lname">
+        <input name="fname"  placeholder="Firstname" type="text" >
+        <input name="lname" placeholder="Lastname" type="text">
 
     </div>
     <div class="first">
-        <input for="num" placeholder="Contact" type="number" id="num">
-        <input for="mail" placeholder="Email" typr="text" id="mail">
+        <input name="mobile" for="num" placeholder="Contact" type="number" id="num">
     </div>
     <div class="first">
-        <input id="age" placeholder="Age" type="number" for="age">
-        <input for="gen" placeholder="Gender" type="text" id="gen">
+        <input name="age" id="age" placeholder="Age" type="number" for="age">
+        <input name="gender" for="gen" placeholder="Gender" type="text" id="gen">
     </div>
     <div class="first">
-        <input for="date_time" placeholder="datetime" type="date" id="date_time">
-        <select>
+        <input name="date" for="date_time" placeholder="datetime" type="date" id="date_time">
+        <select name="problem" aria-placeholder="Select Problem">
             <option value="heart">heart</option>
             <option value="brain">brain</option>
             <option value="lungs">lungs</option>
@@ -33,5 +32,7 @@
     </div>
     <input id="submit" type="submit" value="book apointment">
 </form>
+
+
 
 <%- include("footer") -%>
