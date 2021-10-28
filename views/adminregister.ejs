@@ -1,12 +1,27 @@
 <%- include("header") -%>
 
 <section id="register-page">
-    <form action="/admin-login" class="register-form">
-        <input type="text" placeholder="Userid">
-        <input type="password" required placeholder="Password">
-        <input  type="submit" required value="Register">
-    </form>
-    
+    <div class="rows">
+        <div class="picture">
+            <img src="images/adm-reg.png">
+        </div>
+        <div class="registration">
+          <div class="icon">
+           <img src="images/plus.png" class="plus">
+           <h2>Admin Registration</h2>
+          </div>
+           <div class="details">
+                <form action="/admin-login">
+                  <label for="username" class="label">Username</label><br><br>
+                  <input type="text" id="username" name="username" required><br><br>
+                  <label for="password" class="label">Password</label><br><br>
+                  <input type="password" id="password" name="password" required>
+                  <br><br><br>
+                  <input type="submit" id="submit" value="Register">
+                </form>
+           </div>
+        </div>
+    </div>
 </section>
 
 
