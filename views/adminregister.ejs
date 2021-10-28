@@ -2,11 +2,28 @@
 
 <section id="register-page">
     <%- include("nav") -%>
-    <form action="/admin" method="post" id="register-form">
-        <input name="userid" type="text" placeholder="Userid">
-        <input name="password" type="password" placeholder="Password">
-        <input  type="submit" value="Register">
-    </form>
+    <body>
+        <div class="rows">
+            <div class="picture">
+                <img src="assets/images/adm-reg.png">
+            </div>
+            <div class="registration">
+              <div class="icon">
+               <img src="assets/images/plus.png" class="plus">
+               <h2>Admin Registration</h2>
+              </div>
+               <div class="details">
+                    <form action="/admin" method="post">
+                      <label for="username" class="label">Username</label><br><br>
+                      <input type="text" id="username" name="userid" required><br><br>
+                      <label for="password" class="label">Password</label><br><br>
+                      <input type="password" id="password" name="password" required>
+                      <br><br><br>
+                      <input type="submit" id="submit" value="Register">
+                    </form>
+               </div>
+            </div>
+        </div>
     
 </section>
 
