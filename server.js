@@ -5,6 +5,7 @@ const ejs = require("ejs");
 const connectDB = require("./server/config/db");
 const dotenv = require("dotenv");
 const userRoutes = require("./server/routes/userRoutes");
+const mongoose =require("mongoose");
 
 dotenv.config();
 
