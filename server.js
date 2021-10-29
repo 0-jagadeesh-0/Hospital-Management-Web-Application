@@ -15,7 +15,13 @@ const app = express();
 
 // Database Connection 
 
-connectDB();
+// connectDB();
+
+mongoose.connect( process.env.MONGODB_URI ,{
+            
+    useUnifiedTopology:true,
+    useNewUrlParser:true,
+});
 
 // Middlewares 
 
