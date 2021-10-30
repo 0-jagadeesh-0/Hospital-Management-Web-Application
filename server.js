@@ -17,18 +17,19 @@ const app = express();
 
 // connectDB();
 
+
 // Middlewares 
 
 const static_path=path.join(__dirname,"client");
 
 app.set("view engine","ejs");
 
-app.use(express.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
+app.use(express.json());
 
 app.use(express.static(static_path));
 
@@ -83,6 +84,6 @@ app.get("/list",(req,res)=>{
 
 
 
-app.listen(3000,function() {
+app.listen(process.env.PORT||3000,function() {
     console.log("Server running");
 })

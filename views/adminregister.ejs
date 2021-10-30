@@ -1,7 +1,9 @@
 <%- include("header") -%>
 
 <section id="register-page">
-    <%- include("nav") -%>
+
+
+ <%- include("nav") -%>
         <div class="rows">
             <div class="picture">
                 <img src="assets/images/adm-reg.png">
@@ -13,9 +15,9 @@
               </div>
                <div class="details">
                     <form action="/admin" method="post">
-                      <label for="username" class="label">Username</label><br><br>
+                      <label for="username" class="label">Username</label><br>
                       <input type="text" id="username" name="userid" required><br><br>
-                      <label for="password" class="label">Password</label><br><br>
+                      <label for="password" class="label">Password</label><br>
                       <input type="password" id="password" name="password" required>
                       <br><br><br>
                       <input type="submit" id="submit" value="Register">

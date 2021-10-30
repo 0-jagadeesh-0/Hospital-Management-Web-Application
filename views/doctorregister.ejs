@@ -1,14 +1,33 @@
 <%- include("header") -%>
 
 <section id="register-page">
+
+
     <%- include("nav") -%>
-    <form action="/doctor" method="post" class="register-form">
-        <input name="userid" type="text" placeholder="Userid">
-        <input name="password" type="password" placeholder="Password">
-        <input  type="submit" value="Register">
-    </form>
-    
-</section>
+           <div class="rows">
+               <div class="picture">
+                   <img src="assets/images/doctor.png">
+               </div>
+               <div class="registration">
+                 <div class="icon">
+                  <img src="assets/images/plus.png" class="plus">
+                  <h2>Doctor Registration</h2>
+                 </div>
+                  <div class="details">
+                       <form action="/doctor" method="post">
+                         <label for="username" class="label">Username</label><br>
+                         <input type="text" id="username" name="userid" required><br><br>
+                         <label for="password" class="label">Password</label><br>
+                         <input type="password" id="password" name="password" required>
+                         <br><br><br>
+                         <input type="submit" id="submit" value="Register">
+                       </form>
+                  </div>
+               </div>
+           </div>
+       
+   </section>
+   
 
 
 

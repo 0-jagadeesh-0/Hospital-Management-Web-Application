@@ -1,19 +1,34 @@
 <%- include("header") -%>
 
-<section id="adminlogin">
-    <%- include("nav") -%>
-    <div class="admin-container">
-        <form action="/adminhome" method="post" class="form">
-            <h3>Admin Login</h3>
-            <input name="userid" type="text" placeholder="Userid">
-            <input name="password" type="password" placeholder="Password">
-            <input class="admin-btn" type="submit" value="Login">
-            <a href="/adminregister">Register</a>
-        </form>
-    </div>
-    
-</section>
+<section id="register-page">
 
+
+    <%- include("nav") -%>
+           <div class="rows">
+               <div class="picture">
+                   <img src="assets/images/adm-reg.png">
+               </div>
+               <div class="registration">
+                 <div class="icon">
+                  <img src="assets/images/plus.png" class="plus">
+                  <h2>Admin Login</h2>
+                 </div>
+                  <div class="details">
+                       <form action="/adminhome" method="post">
+                         <label for="username" class="label">Username</label><br>
+                         <input type="text" id="username" name="userid" required><br><br>
+                         <label for="password" class="label">Password</label><br>
+                         <input type="password" id="password" name="password" required>
+                         <br><br><br>
+                         <input type="submit" id="submit" value="Login"><br>
+                         <a href="/adminregister" style="color: white; text-align: center;">don,t have an Account?Register</a>
+                       </form>
+                  </div>
+               </div>
+           </div>
+       
+   </section>
+   
 
 
 <%- include("footer") -%>
