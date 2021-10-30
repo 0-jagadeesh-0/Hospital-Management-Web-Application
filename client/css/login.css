@@ -2,7 +2,8 @@
     height:100vh;
 }
 .first{
-    background-color: #4c6fbf;
+    /* background-color: #4c6fbf; */
+    background-color: #00ACC1;
     position: relative;
     width:100vw;
     height:100vh;
@@ -22,8 +23,12 @@
 }
 .admin , .doctor{
     padding: 100px;;
-    background-color: #4c6fbf;
+    /* background-color: #4c6fbf; */
+    background-color: #00ACC1;
     border-radius: 20px;
+}
+.admin a, .doctor a{
+    text-decoration: none;
 }
 @media  screen and (max-width:800px) {
     .second{
