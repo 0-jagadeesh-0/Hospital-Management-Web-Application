@@ -1,6 +1,6 @@
 <%- include("header") -%>
 
-<form action="/appointment" method="post">
+<!-- <form action="/appointment" method="post">
     <h2 id="two">Appointment Form</h2>
     <div class="first">
         <input name="fname"  placeholder="Firstname" type="text" >
@@ -31,8 +31,73 @@
         </select>
     </div>
     <input id="submit" type="submit" value="book apointment">
-</form>
+</form> -->
 
+
+<section id="patient-reg">
+    <%- include("nav") -%>
+    <div class="patient-reg-container">
+        <div class="registration-pic">
+
+        </div>
+        <div class="registration-form">
+            <div class="reg-title">
+                <img src="assets/images/plus.png" alt="" srcset="">
+                <h1>Appointment Registration</h1>
+            </div>
+                <form class="patient-form" action="/appointment" method="post">
+                    <div class="patient-details"> 
+                        <div class="pdetail">
+                            <label>First Name</label><br>
+                            <input name="fname" type="text">
+                        </div>
+                        <div class="pdetail" >
+                            <label>Last Name</label><br>
+                            <input name="lname" type="text">
+                        </div>
+                    </div>
+                    <div class="patient-details"> 
+                        <div class="pdetail">
+                            <label>Mobile No</label><br>
+                            <input name="mobile" type="text">
+                        </div>
+                        <div class="pdetail">
+                            <label>Age</label><br>
+                            <input name="age" type="text">
+                        </div>
+                    </div>
+                    <div class="patient-details"> 
+                        <div class="pdetail">
+                            <label>Gender</label><br>
+                            <input name="gender" type="text">
+                        </div>
+                        <div class="pdetail">
+                            <label>Address</label><br>
+                            <input name="address" type="text">
+                        </div>
+                    </div>
+                    <div class="patient-details"> 
+                        <div class="pdetail">
+                            <label>Date</label><br>
+                            <!-- <input name="address" type="text"> -->
+                            <input name="date" for="date_time" type="date" id="date_time">
+                        </div>
+                        <div class="pdetail">
+                            <label>Problem</label><br>
+                            <input name="problem" type="text">
+                        </div>
+                    </div>
+                    <div class="patient-details submit-btn">
+                        <input type="submit" value="Register">
+                    </div>
+                   
+                </form>
+
+        </div>
+    </div>
+
+
+</section>
 
 
 <%- include("footer") -%>
