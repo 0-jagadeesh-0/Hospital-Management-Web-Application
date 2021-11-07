@@ -69,6 +69,7 @@
     color: white;
     margin-top: 5%;
     cursor: pointer;
+    font-size: 1.3rem;
 }
 
 @media screen and (max-width:900px){
@@ -91,7 +92,7 @@
 }
 @media screen and (max-width:768px) {
     .patient-reg-container{
-        height: max-content;
+        height: fit-content;
     }
     .registration-pic{
         display: none;

@@ -71,6 +71,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* width: fit-content; */
 }
 
 .info {
@@ -80,8 +81,6 @@ body {
 }
 
 .img1 {
-    background-image: url(../assets/images/img1.png);
-    background-size: cover;
     width: 600px;
     height: 600px;
 }
@@ -89,6 +88,20 @@ body {
 @media screen and (max-width:768px){
     .nav{
         display: none;
+    }
+    .home{
+        flex-direction: column;
+        height: 100vh;
+        /* width: min-content; */
+    }
+
+    .info{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .img1{
+        width: 400px;
+        height: 400px;
     }
     
 }
