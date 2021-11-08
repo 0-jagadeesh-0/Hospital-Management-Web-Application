@@ -134,7 +134,7 @@ span:not(span:last-child){
         width:100vw;
        transform: translateX(-100%);
     }
-    nav-items a{
+    .nav-items a{
         padding:0 0;
     }
     .home{

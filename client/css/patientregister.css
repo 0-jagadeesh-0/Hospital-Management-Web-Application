@@ -73,9 +73,6 @@
 }
 
 @media screen and (max-width:900px){
-    .nav{
-        display: none;
-    }
     .patient-details{
         flex-direction: column;
         justify-content: center;
