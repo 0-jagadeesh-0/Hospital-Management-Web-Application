@@ -7,3 +7,53 @@
     padding: 10%;
     /* left: 10%; */
 }
+
+.enq-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #00ACC1;
+    padding: 2%;
+    border-radius: 5px;
+}
+.enq-search input{
+    /* margin-top: 2%; */
+    width: 200px;
+    border: none;
+    font-size: 1.3rem;
+}
+.enq-search div{
+    margin-top: 5%;
+}
+
+table{
+    /* border: 2px solid black; */
+    margin-top: 10%;
+    text-align: center;
+    width: 600px;
+    /* background-color: rgb(125, 184, 236); */
+}
+th{
+    /* background-color: #00ACC1; */
+    background-color: blueviolet;
+}
+tr{
+    background-color: #66BFBF;
+    color: black;
+}
+tr:hover{
+    background-color:white;
+}
+
+.search-btn{
+    padding: 2%;
+    width: 200px;
+    border: none;
+    background-color: #66BFBF;
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+}

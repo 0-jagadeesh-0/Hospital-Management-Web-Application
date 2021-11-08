@@ -9,7 +9,8 @@
   }
 .registration{
     /* background-color:#4c6fbf; */
-    background-color: #00ACC1;
+    /* background-color: #00ACC1; */
+    background-color: #00acc1ea;
     color: white;
     flex-basis: 50%;
     height:100vh;

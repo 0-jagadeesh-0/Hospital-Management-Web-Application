@@ -1,13 +1,27 @@
 <%- include("header") -%>
+
+
 <%- include("nav") -%>
 
 
 <div class="enquiry-form">
-    <form action="/enquiry" method="post">
-        <input type="text" name="fname" placeholder="name">
-        <input type="text" name="address" placeholder="address">
-        <input type="submit">
+    <form class="enq-search" action="/enquiry" method="post">
+        <div>
+            <label for="">Name</label><br>
+            <input type="text" name="fname">
+        </div>
+        <div>
+            <label for="">Address</label><br>
+            <input type="text" name="address"><br>
+        </div>
+        <div>
+            <input class="search-btn" type="submit">
+        </div>
+        
+       
+        
     </form>
+    
 </div>
 
 

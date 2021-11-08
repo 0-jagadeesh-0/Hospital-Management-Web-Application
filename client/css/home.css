@@ -23,6 +23,7 @@ body {
     justify-content: space-around;
     padding-top: 1%;
     position: absolute;
+    /* position: relative; */
 }
 
 .nav-items {
@@ -94,6 +95,7 @@ body {
         height: 100vh;
         /* width: min-content; */
     }
+
 
     .info{
         font-size: 2rem;
