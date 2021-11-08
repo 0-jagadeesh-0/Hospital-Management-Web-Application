@@ -15,7 +15,7 @@ const app = express();
 
 // Database Connection 
 
-connectDB();
+ connectDB();
 
 
 // Middlewares 
