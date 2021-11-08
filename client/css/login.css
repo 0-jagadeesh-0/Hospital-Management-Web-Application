@@ -1,9 +1,12 @@
 #login{
     height:100vh;
+    background-image: url(../assets/images/background.png);
+    background-size: cover;
 }
 .first{
     /* background-color: #4c6fbf; */
-    background-color: #00ACC1;
+    /* background-color: #00ACC1; */
+    
     position: relative;
     width:100vw;
     height:100vh;
@@ -11,10 +14,10 @@
 .second{
     background-color: white;
     position:absolute;
-    top:5vh;
+    top:20vh;
     left:12vw;
     width:75vw;
-    height:90vh;
+    height:70vh;
     border-radius: 200px;
     display: flex;
     justify-content: space-evenly;

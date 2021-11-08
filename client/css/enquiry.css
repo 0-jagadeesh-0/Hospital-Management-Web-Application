@@ -1,0 +1,9 @@
+.enquiry-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10%;
+    /* left: 10%; */
+}

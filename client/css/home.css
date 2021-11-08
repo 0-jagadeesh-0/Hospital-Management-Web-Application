@@ -78,6 +78,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* width: fit-content; */
 }
 
 .info {
@@ -134,6 +135,20 @@ span:not(span:last-child){
     }
     nav-items a{
         padding:0 0;
+    }
+    .home{
+        flex-direction: column;
+        height: 100vh;
+        /* width: min-content; */
+    }
+
+    .info{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .img1{
+        width: 400px;
+        height: 400px;
     }
     
     .hamburger-menu{

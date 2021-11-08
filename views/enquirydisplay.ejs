@@ -2,35 +2,32 @@
 <%- include("nav") -%>
 
 
-<form action="/enquiry" method="post">
-    <input type="text" name="fname" placeholder="name">
-    <input type="text" name="address" placeholder="address">
-    <input type="submit">
-</form>
-
-
-<table>
-    <thead>
-        <th>Name</th>
-        <th>Problem</th>
-        <th>Address</th>
-    </thead>
-
-    <% records.forEach(function(entry){ %>
-        <tr>
-            <td><%= entry.fname %></td>
-            <td><%= entry.problem %></td>
-            <td><%= entry.address %></td>
-        </tr>
-
-    <% }); %>
-
-        
-
-
+<div class="enquiry-form">
+    <form action="/enquiry" method="post">
+        <input type="text" name="fname" placeholder="name">
+        <input type="text" name="address" placeholder="address">
+        <input type="submit">
+    </form>
     
+    
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Problem</th>
+            <th>Address</th>
+        </thead>
+    
+        <% records.forEach(function(entry){ %>
+            <tr>
+                <td><%= entry.fname %></td>
+                <td><%= entry.problem %></td>
+                <td><%= entry.address %></td>
+            </tr>
+    
+        <% }); %>
+    </table>
+</div>
 
-</table>
 
 
 
