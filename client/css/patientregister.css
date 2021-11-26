@@ -1,9 +1,10 @@
-#patient-reg{
+#patient-reg {
     height: 100vh;
     background-color: #00ACC1;
 
 }
-.patient-reg-container{
+
+.patient-reg-container {
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -11,33 +12,39 @@
     /* background-color: #00ACC1; */
 
 }
-.registration-pic{
+
+.registration-pic {
     width: 50%;
     background-image: url(../assets/images/background.png);
 }
-.reg-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.reg-title img{
-    width: 125px;
-    height: 125px;
-}
-.reg-title h1{
-    font-size: 2.5rem;
-}
-.registration-form{
-    width: 50%;
-    background-color: #00ACC1;
+
+.reg-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.patient-form{
+.reg-title img {
+    width: 125px;
+    height: 125px;
+}
+
+.reg-title h1 {
+    font-size: 2.5rem;
+}
+
+.registration-form {
+    width: 50%;
+    background-color: #00ACC1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.patient-form {
     margin-top: 3%;
     display: flex;
     width: 100%;
@@ -47,7 +54,7 @@
 
 }
 
-.patient-details input{
+.patient-details input {
     font-size: 1.3rem;
     width: 200px;
     border-radius: 5px;
@@ -57,59 +64,71 @@
     margin-bottom: 5%;
 }
 
-.patient-details{
+.patient-details {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-.submit-btn input{
-    background-color:#66BFBF ;
-    width:200px ;
+
+.submit-btn input {
+    background-color: #66BFBF;
+    width: 200px;
     color: white;
     margin-top: 5%;
     cursor: pointer;
     font-size: 1.3rem;
 }
 
-@media screen and (max-width:900px){
-    .patient-details{
+@media screen and (max-width:900px) {
+    .patient-details {
         flex-direction: column;
         justify-content: center;
     }
-    .reg-title h1{
+
+    .reg-title h1 {
         font-size: 2rem;
     }
-    .registration-pic{
+
+    .registration-pic {
         display: none;
     }
-    .registration-form{
+
+    .registration-form {
         width: 100%;
     }
 }
+
 @media screen and (max-width:768px) {
-    .patient-reg-container{
+
+    .patient-reg-container {
         height: fit-content;
     }
-    .registration-pic{
+
+    .registration-pic {
         display: none;
     }
-    .registration-form{
+
+    .registration-form {
         width: 100%;
     }
-    .patient-details{
+
+    .patient-details {
         flex-direction: column;
         justify-content: center;
     }
-    .patient-details input{
+
+    .patient-details input {
         margin-bottom: 3%;
     }
-    .reg-title img{
-        width: 100px;
-        height: 100px;
+
+    .reg-title img {
+        width: 60px;
+        height: 60px;
     }
-    .reg-title h1{
+
+    .reg-title h1 {
         font-size: 1.5rem;
     }
-    
+
 }

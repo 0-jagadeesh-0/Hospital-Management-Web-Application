@@ -1,27 +1,36 @@
 <%- include("header") -%>
 
-<%- include("nav") -%>
+<section id="appointment-list">
+    <%- include("nav") -%>
+    <div class="list-container">
+        <div class="list-table">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Problem</th>
+                    <th>Age</th>
+                </thead>
+            
+                <% records.forEach(function(entry){ %>
+            
+                    <% if(tdate==entry.date){ %>
+                    <tr>
+                        <td><%= entry.fname %></td>
+                        <td><%= entry.problem %></td>
+                        <td><%= entry.age %></td>
+                    </tr>
+                    <% } %>
+            
+                <% }); %>
+            
+            </table>
+        </div>
+    </div>
+</section>
 
-<table>
-    <thead>
-        <th>Name</th>
-        <th>Problem</th>
-        <th>Age</th>
-    </thead>
 
-    <% records.forEach(function(entry){ %>
 
-        <% if(tdate==entry.date){ %>
-        <tr>
-            <td><%= entry.fname %></td>
-            <td><%= entry.problem %></td>
-            <td><%= entry.age %></td>
-        </tr>
-        <% } %>
 
-    <% }); %>
-
-</table>
 
 
 <%- include("footer") -%>

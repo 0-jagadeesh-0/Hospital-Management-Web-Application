@@ -1,0 +1,17 @@
+#appointment-list {
+    height: 100vh;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+}

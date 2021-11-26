@@ -146,6 +146,8 @@ body {
         background-color: #000000da;
         width: 100vw;
         transform: translateX(-100%);
+        z-index: 1000;
+        position: relative;
     }
 
     .nav-items a {
