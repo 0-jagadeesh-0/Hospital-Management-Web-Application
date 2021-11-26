@@ -1,57 +1,66 @@
-
-.register-page{
+.register-page {
     height: 100vh;
 }
 
-.rows{
+.rows {
     display: flex;
-    width:100vw;
-  }
-.registration{
+    width: 100vw;
+}
+
+.registration {
     /* background-color:#4c6fbf; */
     /* background-color: #00ACC1; */
     background-color: #00acc1ea;
     color: white;
     flex-basis: 50%;
-    height:100vh;
-    display:flex;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
     justify-content: center;
     align-items: center;
 }
-.picture{
-    display:flex;
-    flex-basis:50%;
+
+.picture {
+    display: flex;
+    flex-basis: 50%;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height: 100vh;
 }
-img{
-    width:50vw;
+
+img {
+    width: 50vw;
 }
-.picture img{
-    height:100vh;
+
+.picture img {
+    height: 100vh;
 }
-.plus{
-    width:125px;
+
+.plus {
+    width: 125px;
     height: 125px;
 }
-.icon h2{
+
+.icon h2 {
     font-size: 2.5rem;
 }
-.details{
+
+.details {
     margin-top: 8%;
+    position: relative;
 }
-.details input{
-    padding:15px;
-    width:200px;
+
+.details input {
+    padding: 15px;
+    width: 200px;
     border-radius: 10px;
-    border:none;
+    border: none;
     margin-top: 2%;
 }
-#submit{
-    width:230px;
+
+#submit {
+    width: 230px;
     /* background-color: #7b96d4; */
     background-color: #66BFBF;
     /* padding-bottom: 20px; */
@@ -60,25 +69,29 @@ img{
     color: white;
     cursor: pointer;
 }
-.icon{
-    display:flex;
+
+.icon {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 @media screen and (max-width:768px) {
-    .plus{
+    .plus {
         width: 100px;
         height: 100px;
     }
-    
-     .picture{
-         display:none;
-     }
-     .registration{
-        flex-basis:100%;
-         height:100vh;
-     }
-     .icon h2{
-         font-size: 2rem;
-     }
+
+    .picture {
+        display: none;
+    }
+
+    .registration {
+        flex-basis: 100%;
+        height: 100vh;
+    }
+
+    .icon h2 {
+        font-size: 2rem;
+    }
 }
