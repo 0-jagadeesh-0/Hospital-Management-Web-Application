@@ -3,46 +3,48 @@
 <section id="enq-sec">
 
     <%- include("nav") -%>
-<div class="enquiry-form">
-    <form class="enq-search" action="/enquiry" method="post">
-        <div>
-            <label for="">Name</label><br>
-            <input type="text" name="fname">
-        </div>
-        <div>
-            <label for="">Address</label><br>
-            <input type="text" name="address"><br>
-        </div>
-        <div>
-            <input class="search-btn" type="submit">
-        </div>
+<div class="enquiry-display">
+    <!-- <div>
+        <form class="enq-search" action="/enquiry" method="post">
+            <div>
+                <label for="">Name</label><br>
+                <input type="text" name="fname">
+            </div>
+            <div>
+                <label for="">Address</label><br>
+                <input type="text" name="address"><br>
+            </div>
+            <div>
+                <input class="search-btn" type="submit">
+            </div>
+        </form>
+    </div> -->
+    <div class="enq-table">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Problem</th>
+                <th>Address</th>
+            </thead>
         
-       
+            <% records.forEach(function(entry){ %>
+                <tr>
+                    <td><%= entry.fname %></td>
+                    <td><%= entry.problem %></td>
+                    <td><%= entry.address %></td>
+                </tr>
         
-    </form>
+            <% }); %>
+        </table>
+    </div>
 
-    <table>
-        <thead>
-            <th>Name</th>
-            <th>Problem</th>
-            <th>Address</th>
-        </thead>
+    <div style="position: absolute;bottom: 3%;left: 3%;" ><a style="color: white;text-decoration: none;font-size: 2rem;" href="/enquiry"><i class="fas fa-search"></i></a></div>
     
-        <% records.forEach(function(entry){ %>
-            <tr>
-                <td><%= entry.fname %></td>
-                <td><%= entry.problem %></td>
-                <td><%= entry.address %></td>
-            </tr>
+
     
-        <% }); %>
-    </table>
 </div>
 
 </section>
-
-
-
 
 
 <%- include("footer") -%>

@@ -1,15 +1,17 @@
-#adminlogin{
+#adminlogin {
     height: 100vh;
 }
 
-.admin-container{
+
+
+.admin-container {
     display: flex;
     justify-content: center;
     align-items: center;
     /* position: absolute; */
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +23,7 @@
     padding: 1%;
 }
 
-.form input{
+.form input {
     margin: 5% 2%;
     width: fit-content;
     border: none;
@@ -31,13 +33,13 @@
     padding: 1%;
 }
 
-.admin-btn{
+.admin-btn {
     padding: 50px;
     background-color: rgb(219, 243, 243);
     cursor: pointer;
 }
 
-.form a{
+.form a {
     color: white;
     text-decoration: none;
 }

@@ -1,28 +1,29 @@
 <%- include("header") -%>
 
 
-<%- include("nav") -%>
+
+<section id="enq-sec">
+    <%- include("nav") -%>
+    <div class="enquiry-form">
+        
+        <form class="enq-search" action="/enquiry" method="post">
+            <div>
+                <label for="">Name</label><br>
+                <input type="text" name="fname">
+            </div>
+            <div>
+                <input class="search-btn" type="submit">
+            </div>
+            
+           
+            
+        </form>
+        
+    </div>
+</section>
 
 
-<div class="enquiry-form">
-    <form class="enq-search" action="/enquiry" method="post">
-        <div>
-            <label for="">Name</label><br>
-            <input type="text" name="fname">
-        </div>
-        <div>
-            <label for="">Address</label><br>
-            <input type="text" name="address"><br>
-        </div>
-        <div>
-            <input class="search-btn" type="submit">
-        </div>
-        
-       
-        
-    </form>
-    
-</div>
+
 
 
 
